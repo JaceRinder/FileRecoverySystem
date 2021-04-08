@@ -1,0 +1,18 @@
+File Recovery System 
+
+Jace Rinder 
+
+Overview: 
+ This project is designed to parse disk images formatted in FAT12. Its output represents the files stored in a specified image, including 
+ recoverable files that may have been deleted. 
+ 
+How to use: 
+ To compile the project using the 'Makefile' the user can simply run 'make'. This generates the executable 'fileRecovery' which can then be 
+ ran alongside a specified disk image and output directory. In the repository, there is an example image entitled 'simple.img' which contains 
+ two text files and two .jpg images for testing. 
+ 
+Example: 
+ $ make
+ $ ./fileRecovery simple.img /recovered_files
+ 
+ Note that in this instance the output of all recovered files will be stored in the local directory 'recovered_files'
